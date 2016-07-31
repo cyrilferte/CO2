@@ -10,4 +10,7 @@ class PagesController < ApplicationController
   def contact
     # ...
   end
+  def profil
+    @user= User.find(params[:id])
+  end
 end

@@ -8,6 +8,9 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
 gem 'devise', '4.0.0.rc2'
+gem 'faye'
+gem 'thin', require: false
+gem 'render_sync'
 
 gem 'sass-rails'
 gem 'jquery-rails'

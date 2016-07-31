@@ -1,0 +1,7 @@
+  <div class="banner-content">
+    <h1><%= @doc.name %></h1>
+    <p><%= @doc.abstract %></p>
+    <%= link_to "GET IT", @doc.url, class:"navbar-wagon-item navbar-wagon-button btn btn-warning"  %>
+    <div class="container"><iframe src="<%= @doc.url %>" width="1200" height="1200"></iframe> </div>
+  </div>
+</div>
