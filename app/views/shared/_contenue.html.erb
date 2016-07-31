@@ -4,8 +4,8 @@
        <div class="card card-outline-danger text-xs-center">
       <div class="card-block">
         <blockquote class="card-blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          <p><%= @contenuee.find(1).title%></p>
+          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
         </blockquote>
   </div>
 </div>
@@ -15,7 +15,7 @@
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer><br><br>
     </blockquote>
   </div>
 </div>
@@ -24,8 +24,8 @@
           <div class="card card-outline-danger text-xs-center">
       <div class="card-block">
         <blockquote class="card-blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+         <p><%= @contenuee.find(1).title%></p>
+          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
         </blockquote>
   </div>
 </div>
@@ -34,8 +34,8 @@
        <div class="card card-outline-danger text-xs-center">
       <div class="card-block">
         <blockquote class="card-blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer><br><br>
+         <p><%= @contenuee.find(1).title%></p>
+          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
         </blockquote>
   </div>
 </div>
@@ -49,12 +49,14 @@
        <div class="card card-outline-danger text-xs-center">
       <div class="card-block">
         <blockquote class="card-blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          <br><br>
+         <p><%= @contenuee.find(1).title%></p>
+          <footer><%= @contenuee.find(1).url%></footer>
+          <br><br><br><br>
         </blockquote>
   </div>
 </div>
     </div>
   </div>
-</div></div>
+</div>
+<%= link_to "All content", contenues_path %>
+</div>

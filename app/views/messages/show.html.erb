@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p><%= @message.topic %>
   <strong>Body:</strong>
   <%= @message.body %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @message.user %>
+  <%= @message.name %>
 </p>
 
 <%= link_to 'Edit', edit_message_path(@message) %> |

@@ -2,7 +2,8 @@ class PagesController < ApplicationController
   def home
   end
    def home
-    # ...
+    @contenuee= Contenue.all
+     @topic=Message.all
   end
   def team
     # ...
