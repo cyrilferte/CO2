@@ -1,0 +1,953 @@
+.loading{
+	position: relative;
+	height: 400px;
+	width: 400px;
+	-webkit-animation: animain 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    animain 5s infinite linear; /* Fx 5+ */
+	-o-animation:      animain 5s infinite linear; /* Opera 12+ */
+	animation:         animain 5s infinite linear; /* IE 10+, Fx 29+ */
+}
+.dot{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+}
+.one{
+	top: 25px;
+	left: 100px;
+	height: 350px;
+	background-color: #F64747;
+	-webkit-animation: anione 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    anione 5s infinite linear; /* Fx 5+ */
+	-o-animation:      anione 5s infinite linear; /* Opera 12+ */
+	animation:         anione 5s infinite linear; /* IE 10+, Fx 29+ */
+}
+.one::after{ /* To overlay .four */
+	content:          "";
+	position: absolute;
+	bottom: 0;
+	border-radius: 50px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	width:50px;
+	height: 175px;
+	background-color: #F64747;
+	z-index: 100;
+	-webkit-animation: anioneafter 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    anioneafter 5s infinite linear; /* Fx 5+ */
+	-o-animation:      anioneafter 5s infinite linear; /* Opera 12+ */
+	animation:         anioneafter 5s infinite linear; /* IE 10+, Fx 29+ */
+}
+.two{
+	top: 100px;
+	right: 25px;
+	width: 350px;
+	background-color: #03C9A9;
+	-webkit-animation: anitwo 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    anitwo 5s infinite linear; /* Fx 5+ */
+	-o-animation:      anitwo 5s infinite linear; /* Opera 12+ */
+	animation:         anitwo 5s infinite linear; /* IE 10+, Fx 29+ */
+	z-index: 20;
+}
+.three{
+	bottom: 25px;
+	right: 100px;
+	height: 350px;
+	background-color: #4183D7;
+	-webkit-animation: anithree 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    anithree 5s infinite linear; /* Fx 5+ */
+	-o-animation:      anithree 5s infinite linear; /* Opera 12+ */
+	animation:         anithree 5s infinite linear; /* IE 10+, Fx 29+ */
+	z-index: 30;
+}
+.four{
+	bottom: 100px;
+	left: 25px;
+	width: 350px;
+	background-color: #F4D03F;
+	-webkit-animation: anifour 5s infinite linear; /* Safari 4+ */
+	-moz-animation:    anifour 5s infinite linear; /* Fx 5+ */
+	-o-animation:      anifour 5s infinite linear; /* Opera 12+ */
+	animation:         anifour 5s infinite linear; /* IE 10+, Fx 29+ */
+	z-index: 40;
+}
+
+@-webkit-keyframes animain {
+	0%   {
+		transform: rotate(225deg);
+	}
+	13%   {
+		transform: rotate(225deg);
+	}
+	25%   {
+		transform: rotate(225deg);
+	}
+	38%   {
+		transform: rotate(225deg);
+	}
+	50%   {
+		transform: rotate(45deg);
+	}
+	63% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(45deg);
+	}
+	88% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(225deg);
+	}
+}
+@-moz-keyframes animain {
+	0%   {
+		transform: rotate(225deg);
+	}
+	13%   {
+		transform: rotate(225deg);
+	}
+	25%   {
+		transform: rotate(225deg);
+	}
+	38%   {
+		transform: rotate(225deg);
+	}
+	50%   {
+		transform: rotate(45deg);
+	}
+	63% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(45deg);
+	}
+	88% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(225deg);
+	}
+}
+@-o-keyframes animain {
+	0%   {
+		transform: rotate(225deg);
+	}
+	13%   {
+		transform: rotate(225deg);
+	}
+	25%   {
+		transform: rotate(225deg);
+	}
+	38%   {
+		transform: rotate(225deg);
+	}
+	50%   {
+		transform: rotate(45deg);
+	}
+	63% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(45deg);
+	}
+	88% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(225deg);
+	}
+}
+@keyframes animain {
+	0%   {
+		transform: rotate(225deg);
+	}
+	13%   {
+		transform: rotate(225deg);
+	}
+	25%   {
+		transform: rotate(225deg);
+	}
+	38%   {
+		transform: rotate(225deg);
+	}
+	50%   {
+		transform: rotate(45deg);
+	}
+	63% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(45deg);
+	}
+	88% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(225deg);
+	}
+}
+
+@-webkit-keyframes anione {
+	0%   {
+		height: 50px;
+		top: 25px;
+	}
+	13%   {
+		height: 350px;
+		top: 25px;
+	}
+	25%   {
+		height: 350px;
+		top: 25px;
+	}
+	38%   {
+		height: 50px;
+		top: 325px;
+	}
+	50%   {
+		height: 50px;
+		top: 325px;
+	}
+	63% {
+		height: 350px;
+		top: 25px;
+	}
+	75% {
+		height: 350px;
+		top: 25px;
+	}
+	88% {
+		height: 50px;
+		top: 25px;
+	}
+	100% {
+		height: 50px;
+		top: 25px;
+	}
+}
+@-moz-keyframes anione {
+	0%   {
+		height: 50px;
+		top: 25px;
+	}
+	13%   {
+		height: 350px;
+		top: 25px;
+	}
+	25%   {
+		height: 350px;
+		top: 25px;
+	}
+	38%   {
+		height: 50px;
+		top: 325px;
+	}
+	50%   {
+		height: 50px;
+		top: 325px;
+	}
+	63% {
+		height: 350px;
+		top: 25px;
+	}
+	75% {
+		height: 350px;
+		top: 25px;
+	}
+	88% {
+		height: 50px;
+		top: 25px;
+	}
+	100% {
+		height: 50px;
+		top: 25px;
+	}
+}
+@-o-keyframes anione {
+	0%   {
+		height: 50px;
+		top: 25px;
+	}
+	13%   {
+		height: 350px;
+		top: 25px;
+	}
+	25%   {
+		height: 350px;
+		top: 25px;
+	}
+	38%   {
+		height: 50px;
+		top: 325px;
+	}
+	50%   {
+		height: 50px;
+		top: 325px;
+	}
+	63% {
+		height: 350px;
+		top: 25px;
+	}
+	75% {
+		height: 350px;
+		top: 25px;
+	}
+	88% {
+		height: 50px;
+		top: 25px;
+	}
+	100% {
+		height: 50px;
+		top: 25px;
+	}
+}
+@keyframes anione {
+	0%   {
+		height: 50px;
+		top: 25px;
+	}
+	13%   {
+		height: 350px;
+		top: 25px;
+	}
+	25%   {
+		height: 350px;
+		top: 25px;
+	}
+	38%   {
+		height: 50px;
+		top: 325px;
+	}
+	50%   {
+		height: 50px;
+		top: 325px;
+	}
+	63% {
+		height: 350px;
+		top: 25px;
+	}
+	75% {
+		height: 350px;
+		top: 25px;
+	}
+	88% {
+		height: 50px;
+		top: 25px;
+	}
+	100% {
+		height: 50px;
+		top: 25px;
+	}
+}
+
+@-webkit-keyframes anioneafter {
+	0%   {
+		height: 25px;
+	}
+	6% {
+		height: 25px;
+	}
+	13%   {
+		height: 175px;
+	}
+	25%   {
+		height: 175px;
+	}
+	31% {
+		height: 175px;
+	}
+	38%   {
+		height: 25px;
+	}
+	50%   {
+		height: 25px;
+	}
+	60%	{
+		height: 175px;
+	}
+	75% {
+		height: 175px;
+	}
+	84% {
+		height: 25px;
+	}
+	100% {
+		height: 25px;
+	}
+}
+@-moz-keyframes anioneafter {
+	0%   {
+		height: 25px;
+	}
+	6% {
+		height: 25px;
+	}
+	13%   {
+		height: 175px;
+	}
+	25%   {
+		height: 175px;
+	}
+	31% {
+		height: 175px;
+	}
+	38%   {
+		height: 25px;
+	}
+	50%   {
+		height: 25px;
+	}
+	60%	{
+		height: 175px;
+	}
+	75% {
+		height: 175px;
+	}
+	84% {
+		height: 25px;
+	}
+	100% {
+		height: 25px;
+	}
+}
+@-o-keyframes anioneafter {
+	0%   {
+		height: 25px;
+	}
+	6% {
+		height: 25px;
+	}
+	13%   {
+		height: 175px;
+	}
+	25%   {
+		height: 175px;
+	}
+	31% {
+		height: 175px;
+	}
+	38%   {
+		height: 25px;
+	}
+	50%   {
+		height: 25px;
+	}
+	60%	{
+		height: 175px;
+	}
+	75% {
+		height: 175px;
+	}
+	84% {
+		height: 25px;
+	}
+	100% {
+		height: 25px;
+	}
+}
+@keyframes anioneafter {
+	0%   {
+		height: 25px;
+	}
+	6% {
+		height: 25px;
+	}
+	13%   {
+		height: 175px;
+	}
+	25%   {
+		height: 175px;
+	}
+	31% {
+		height: 175px;
+	}
+	38%   {
+		height: 25px;
+	}
+	50%   {
+		height: 25px;
+	}
+	60%	{
+		height: 175px;
+	}
+	75% {
+		height: 175px;
+	}
+	84% {
+		height: 25px;
+	}
+	100% {
+		height: 25px;
+	}
+}
+
+@-webkit-keyframes anitwo {
+	0%   {
+		width: 50px;
+		right: 25px;
+	}
+	13%   {
+		width: 350px;
+		right: 25px;
+	}
+	25%   {
+		width: 350px;
+		right: 25px;
+	}
+	38%   {
+		width: 50px;
+		right: 325px;
+	}
+	50%   {
+		width: 50px;
+		right: 325px;
+	}
+	63% {
+		width: 350px;
+		right: 25px;
+	}
+	75% {
+		width: 350px;
+		right: 25px;
+	}
+	88% {
+		width: 50px;
+		right: 25px;
+	}
+	100% {
+		width: 50px;
+		right: 25px;
+	}
+}
+@-moz-keyframes anitwo {
+	0%   {
+		width: 50px;
+		right: 25px;
+	}
+	13%   {
+		width: 350px;
+		right: 25px;
+	}
+	25%   {
+		width: 350px;
+		right: 25px;
+	}
+	38%   {
+		width: 50px;
+		right: 325px;
+	}
+	50%   {
+		width: 50px;
+		right: 325px;
+	}
+	63% {
+		width: 350px;
+		right: 25px;
+	}
+	75% {
+		width: 350px;
+		right: 25px;
+	}
+	88% {
+		width: 50px;
+		right: 25px;
+	}
+	100% {
+		width: 50px;
+		right: 25px;
+	}
+}
+@-o-keyframes anitwo {
+	0%   {
+		width: 50px;
+		right: 25px;
+	}
+	13%   {
+		width: 350px;
+		right: 25px;
+	}
+	25%   {
+		width: 350px;
+		right: 25px;
+	}
+	38%   {
+		width: 50px;
+		right: 325px;
+	}
+	50%   {
+		width: 50px;
+		right: 325px;
+	}
+	63% {
+		width: 350px;
+		right: 25px;
+	}
+	75% {
+		width: 350px;
+		right: 25px;
+	}
+	88% {
+		width: 50px;
+		right: 25px;
+	}
+	100% {
+		width: 50px;
+		right: 25px;
+	}
+}
+@keyframes anitwo {
+	0%   {
+		width: 50px;
+		right: 25px;
+	}
+	13%   {
+		width: 350px;
+		right: 25px;
+	}
+	25%   {
+		width: 350px;
+		right: 25px;
+	}
+	38%   {
+		width: 50px;
+		right: 325px;
+	}
+	50%   {
+		width: 50px;
+		right: 325px;
+	}
+	63% {
+		width: 350px;
+		right: 25px;
+	}
+	75% {
+		width: 350px;
+		right: 25px;
+	}
+	88% {
+		width: 50px;
+		right: 25px;
+	}
+	100% {
+		width: 50px;
+		right: 25px;
+	}
+}
+
+@-webkit-keyframes anithree {
+	0%   {
+		height: 50px;
+		bottom: 25px;
+	}
+	13%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	25%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	38%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	50%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	63% {
+		height: 350px;
+		bottom: 25px;
+	}
+	75% {
+		height: 350px;
+		bottom: 25px;
+	}
+	88% {
+		height: 50px;
+		bottom: 25px;
+	}
+	100% {
+		height: 50px;
+		bottom: 25px;
+	}
+}
+@-moz-keyframes anithree {
+	0%   {
+		height: 50px;
+		bottom: 25px;
+	}
+	13%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	25%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	38%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	50%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	63% {
+		height: 350px;
+		bottom: 25px;
+	}
+	75% {
+		height: 350px;
+		bottom: 25px;
+	}
+	88% {
+		height: 50px;
+		bottom: 25px;
+	}
+	100% {
+		height: 50px;
+		bottom: 25px;
+	}
+}
+@-o-keyframes anithree {
+	0%   {
+		height: 50px;
+		bottom: 25px;
+	}
+	13%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	25%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	38%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	50%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	63% {
+		height: 350px;
+		bottom: 25px;
+	}
+	75% {
+		height: 350px;
+		bottom: 25px;
+	}
+	88% {
+		height: 50px;
+		bottom: 25px;
+	}
+	100% {
+		height: 50px;
+		bottom: 25px;
+	}
+}
+@keyframes anithree {
+	0%   {
+		height: 50px;
+		bottom: 25px;
+	}
+	13%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	25%   {
+		height: 350px;
+		bottom: 25px;
+	}
+	38%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	50%   {
+		height: 50px;
+		bottom: 325px;
+	}
+	63% {
+		height: 350px;
+		bottom: 25px;
+	}
+	75% {
+		height: 350px;
+		bottom: 25px;
+	}
+	88% {
+		height: 50px;
+		bottom: 25px;
+	}
+	100% {
+		height: 50px;
+		bottom: 25px;
+	}
+}
+
+@-webkit-keyframes anifour {
+	0%   {
+		width: 50px;
+		left: 25px;
+	}
+	13%   {
+		width: 350px;
+		left: 25px;
+	}
+	25%   {
+		width: 350px;
+		left: 25px;
+	}
+	38%   {
+		width: 50px;
+		left: 325px;
+	}
+	50%   {
+		width: 50px;
+		left: 325px;
+	}
+	63% {
+		width: 350px;
+		left: 25px;
+	}
+	75% {
+		width: 350px;
+		left: 25px;
+	}
+	88% {
+		width: 50px;
+		left: 25px;
+	}
+	100% {
+		width: 50px;
+		left: 25px;
+	}
+}
+@-moz-keyframes anifour {
+	0%   {
+		width: 50px;
+		left: 25px;
+	}
+	13%   {
+		width: 350px;
+		left: 25px;
+	}
+	25%   {
+		width: 350px;
+		left: 25px;
+	}
+	38%   {
+		width: 50px;
+		left: 325px;
+	}
+	50%   {
+		width: 50px;
+		left: 325px;
+	}
+	63% {
+		width: 350px;
+		left: 25px;
+	}
+	75% {
+		width: 350px;
+		left: 25px;
+	}
+	88% {
+		width: 50px;
+		left: 25px;
+	}
+	100% {
+		width: 50px;
+		left: 25px;
+	}
+}
+@-o-keyframes anifour {
+	0%   {
+		width: 50px;
+		left: 25px;
+	}
+	13%   {
+		width: 350px;
+		left: 25px;
+	}
+	25%   {
+		width: 350px;
+		left: 25px;
+	}
+	38%   {
+		width: 50px;
+		left: 325px;
+	}
+	50%   {
+		width: 50px;
+		left: 325px;
+	}
+	63% {
+		width: 350px;
+		left: 25px;
+	}
+	75% {
+		width: 350px;
+		left: 25px;
+	}
+	88% {
+		width: 50px;
+		left: 25px;
+	}
+	100% {
+		width: 50px;
+		left: 25px;
+	}
+}
+@keyframes anifour {
+	0%   {
+		width: 50px;
+		left: 25px;
+	}
+	13%   {
+		width: 350px;
+		left: 25px;
+	}
+	25%   {
+		width: 350px;
+		left: 25px;
+	}
+	38%   {
+		width: 50px;
+		left: 325px;
+	}
+	50%   {
+		width: 50px;
+		left: 325px;
+	}
+	63% {
+		width: 350px;
+		left: 25px;
+	}
+	75% {
+		width: 350px;
+		left: 25px;
+	}
+	88% {
+		width: 50px;
+		left: 25px;
+	}
+	100% {
+		width: 50px;
+		left: 25px;
+	}
+}
+.slack-btn{
+  background-color: rgba(58, 13, 52, 0.8);
+  color: white;
+}
+.slack-btn:hover{
+  background-color: rgba(58, 13, 52, 0.9);
+  color: white;
+}
+

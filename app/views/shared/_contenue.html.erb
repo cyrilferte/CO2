@@ -1,62 +1,61 @@
 <div class="container">
 <div class="row">
     <div class="col-lg-4">
-       <div class="card card-outline-danger text-xs-center">
+       <div class="card card-outline-danger text-xs-center card-content">
       <div class="card-block">
         <blockquote class="card-blockquote">
           <p><%= @contenuee.find(1).title%></p>
-          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
+          <footer class="content-footer"><%= link_to @contenuee.find(1).url, @contenuee.find(1).url%></footer>
         </blockquote>
   </div>
 </div>
     </div>
     <div class="col-lg-4">
-       <div class="card card-inverse card-danger text-xs-center">
+       <div class="card card-inverse card-danger text-xs-center card-content">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer><br><br>
+      <footer class="content-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
     </div>
     <div class="col-lg-4">
-          <div class="card card-outline-danger text-xs-center">
+          <div class="card card-outline-danger text-xs-center card-content">
       <div class="card-block">
         <blockquote class="card-blockquote">
-         <p><%= @contenuee.find(1).title%></p>
-          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
+         <p><%= @contenuee.find(2).title%></p>
+          <footer class="content-footer"><%= link_to @contenuee.find(1).url, @contenuee.find(1).url%></footer>
         </blockquote>
   </div>
 </div>
     </div>
   <div class="col-lg-4">
-       <div class="card card-outline-danger text-xs-center">
+       <div class="card card-outline-danger text-xs-center card-content">
       <div class="card-block">
         <blockquote class="card-blockquote">
-         <p><%= @contenuee.find(1).title%></p>
-          <footer><%= @contenuee.find(1).url%></footer><br><br><br><br>
+         <p><%= @contenuee.find(3).title%></p>
+          <footer class="content-footer"><%= link_to @contenuee.find(1).url, @contenuee.find(1).url%></footer>
         </blockquote>
   </div>
 </div>
     </div>
   <div class="col-lg-4">
-      <div class="embed-responsive embed-responsive-16by9">
+      <div class="embed-responsive embed-responsive-16by9 card-content">
   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen></iframe>
 </div>
     </div>
   <div class="col-lg-4">
-       <div class="card card-outline-danger text-xs-center">
+       <div class="card card-outline-danger text-xs-center card-content">
       <div class="card-block">
         <blockquote class="card-blockquote">
-         <p><%= @contenuee.find(1).title%></p>
-          <footer><%= @contenuee.find(1).url%></footer>
-          <br><br><br><br>
+         <p><%= @contenuee.find(4).title%></p>
+          <footer class="content-footer"><%= link_to @contenuee.find(1).url, @contenuee.find(1).url%></footer>
         </blockquote>
   </div>
 </div>
     </div>
   </div>
 </div>
-<%= link_to "All content", contenues_path %>
+<%= link_to "All content", contenues_path, class:"text-right pull-xs-right" %>
 </div>

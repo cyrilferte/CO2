@@ -1,6 +1,6 @@
  <%= simple_form_for @contenue do |f| %>
-      <%= f.input :title, placeholder: "Name", label: "which product?" %>
-      <%= f.input :abstract, placeholder: "Short resume", label: "which tigline?" %>
-      <%= f.input :url, as: :url, label: "which url?", input_html: { value: "http://" } %>
+      <%= f.input :title, placeholder: "Name", label: "Title", class: "text-left" %>
+      <%= f.input :abstract, placeholder: "Short resume", label: "abstract" %>
+      <%= f.input :url, as: :url, label: "link", input_html: { value: "http://" } %>
       <%= f.button :submit, "Add", class: "btn btn-primary" %>
   <% end %>
