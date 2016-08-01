@@ -8,6 +8,7 @@
 
  <%= link_to doc_path(doc) do %>
          <div class='product-body'>
+           <div class='product-body col-xs-2'><%=image_tag("doc.png")%> <br><br></div>
             <h3 class="ttext"><%= doc.name %></h3>
             <p class="ttext"><%= doc.abstract %></p>
            <% end %>

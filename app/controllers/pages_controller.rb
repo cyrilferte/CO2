@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
    def home
     @contenuee= Contenue.all
-     @topic=Message.all
+     @doc= Doc.all.reverse.take(5)
   end
   def team
     # ...

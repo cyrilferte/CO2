@@ -1,21 +1,22 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Chat</h1>
+    <h1 class="display-3">Community</h1>
   </div>
 </div>
 <div class="jumbotron container">
   <div class="container">
-    <h1 class="display-3">Topic</h1>
+    <h1 class="display-3">Documents</h1><br>
     <p class="lead">
-      <% @topic.each do |topic| %>
+      <% @doc.each do |doc| %>
       <tr>
-
-         <%= link_to topic.topic, messages_path(topic: topic.topic), class: "card-category design" %><br>
+         <%=image_tag("icondoc.png")%>
+         <%= link_to doc.name, doc_path(doc), class: "card-product " %><br>
 
 
       </tr>
     <% end %>
-
+      <br><br>
+<%= link_to "All Documents", docs_path, class:"text-right pull-xs-right" %>
 
     </p>
   </div>
