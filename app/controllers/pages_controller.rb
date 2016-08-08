@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
-  def home
-  end
+
    def home
     @contenuee= Contenue.all
      @doc= Doc.all.reverse.take(5)

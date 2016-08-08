@@ -1,6 +1,6 @@
 class Contenue < ApplicationRecord
   
-   validates :title, presence: true, uniqueness: true
-  validates :url, presence: true, uniqueness: true
-  validates :abstract, presence: true, uniqueness: true
+   validates :title, presence: true
+  validates :url, presence: true
+  validates :abstract, presence: true
 end

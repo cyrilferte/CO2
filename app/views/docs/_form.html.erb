@@ -1,6 +1,6 @@
  <%= simple_form_for @doc do |f| %>
       <%= f.input :name, placeholder: "Name", label: "Name doc?" %>
-<%= image_tag("https://media.giphy.com/media/mo971YnQpGv04/giphy.gif") %>
+<%= image_tag("gifdoc.gif", width:"700px") %>
       <%= f.input :url, as: :url, label: "share public link", input_html: { value: "https://" } %>
       <%= f.input :abstract, as: :text, placeholder: "long resume", label: "description" %>
       <%= f.button :submit, "Add", class: "btn btn-primary" %>
